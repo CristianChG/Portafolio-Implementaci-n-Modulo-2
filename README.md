@@ -1,18 +1,18 @@
 # Clasificador de personas con y sin lentes
 
-**Objetivo en una línea:** Detectar automáticamente si una persona **usa lentes** o **no** a partir de una imagen facial, con un pipeline reproducible de entrenamiento.
+**Objetivo:** Detectar automáticamente si una persona **usa lentes** o **no** a partir de una imagen facial, con un pipeline reproducible de entrenamiento.
 
 ---
 
 ## 1) Contexto y motivación
 
 * **Problema:** automatizar una tarea binaria (con/sin lentes) útil como etapa previa en flujos de verificación/registro.
-* **Usuario final / Caso de uso:** equipos que etiquetan imágenes o aplicaciones que necesitan filtros/ajustes en función de si el sujeto porta lentes.
+* **Caso de uso:** equipos que etiquetan imágenes o aplicaciones que necesitan filtros/ajustes en función de si el sujeto porta lentes.
 * **Criterio de éxito:** alcanzar **≥ 90%** de accuracy en validación/test con un modelo compacto y fácil de desplegar.
 
 ## 2) Objetivo del trabajo
 
-* Construir un **baseline CNN** simple, entrenado con data augmentation ligero y **early stopping / ReduceLROnPlateau / checkpoint** al mejor `val_loss`.
+* Construir un **baseline CNN** simple, entrenado con data augmentation ligero y **early stopping / checkpoint** al mejor `val_loss`.
 * Entregar **dos notebooks** (training + predicción) y dejar listo el guardado/carga del modelo (`.keras`).
 
 ## 3) Dataset
